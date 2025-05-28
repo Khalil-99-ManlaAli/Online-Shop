@@ -1,3 +1,5 @@
+import OrderForm from "./pages/OrderForm";
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login";
@@ -20,6 +22,8 @@ function App() {
           <Route path="/" element={<Startseite />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/order" element={<OrderForm />} />
+
         </Routes>
       </div>
     </Router>
